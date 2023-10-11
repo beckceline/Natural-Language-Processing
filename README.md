@@ -17,4 +17,10 @@ Unser erstes Modell verwenden wir auf Basis des Naive Bayes Algorithmus. Wir tra
 
 ### Ergebnis
 
-Am Ende des Projekts haben wir erfolgreich ein Modell entwickelt, das anhand von Yelp-Bewertungen zwischen "1 Stern" und "5 Sterne" unterscheiden kann.
+Der erste Ansatz verwendete den CountVectorizer und Naive Bayes, was zu einer beeindruckenden Genauigkeit von etwa 93% führte. Das Modell konnte zwischen 1-Stern- und 5-Stern-Bewertungen gut unterscheiden.
+
+Der zweite Ansatz integrierte TF-IDF in den Prozess, aber überraschenderweise verschlechterte die Modellleistung. Die Genauigkeit sank auf 81%, und das Modell konnte die 1-Stern-Bewertungen nicht mehr korrekt identifizieren.
+
+Insgesamt lässt sich festhalten, dass der einfache Ansatz, bei dem nur der CountVectorizer verwendet wurde, in diesem Fall bessere Ergebnisse lieferte. Es ist wichtig zu beachten, dass die Leistung eines Textklassifikationsmodells stark von den spezifischen Daten und dem Anwendungsfall abhängt. Es ist jedoch immer eine gute Idee, verschiedene Ansätze zu vergleichen und zu experimentieren, um die bestmöglichen Ergebnisse zu erzielen.
+
+Abschließend können wir sagen, dass die einfache Textklassifikation mit Naive Bayes und CountVectorizer in diesem Fall gut funktioniert hat, während die Integration von TF-IDF die Modellleistung negativ beeinflusst hat. 
